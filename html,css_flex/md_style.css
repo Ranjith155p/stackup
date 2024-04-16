@@ -2,32 +2,74 @@
 
 body {
     margin: 0;
-    padding: 0;
 }
 
-*{
+* {
     box-sizing: border-box;
     font-weight: 700;
     font-family: montserrat;
     font-size: 14px;
-    letter-spacing:0.2px;
+    letter-spacing: 0.20000000298023224px;
 }
 
-.brand {
-position: relative;
-    padding: 0;
-    font-size: 2rem;
+p {
+    color: #737373;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 80px;
     color: #252B42;
-    margin:0;
-
 }
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Montserrat;
+    line-height: 50px;
+    color: #252B42;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.10000000149011612px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #737373;
+}
+
+h5 {
+
+    font-size: 16px;
+    font-weight: 700;
+    color: #252B42;
+}
+
+h6 {
+    color: #1BA0AB;
+    font-size: 14px;
+    font-weight: 700;
+    align-items: center;
+}
+
+/*****************headerstart***********************************/
+
 .header_condainer {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     background: #FFF5F0;
-
 }
 
 .fixed-top {
@@ -37,30 +79,29 @@ position: relative;
     left: 0;
     z-index: 1030;
 }
-.navigation {
-    transition: 5s all;
-}
- header nav{
-    flex-basis: 35% ;
+
+header nav {
+    flex-basis: 35%;
     /* padding-left: 35; */
+
 }
+
 nav ul {
     position: relative;
     display: flex;
     text-decoration: none;
     list-style: none;
     flex-wrap: wrap;
-}
 
+}
 nav ul li {
-    padding: 10px 10px;
     color: #1BA0AB;
 }
 
 nav ul li a {
     text-decoration: none;
-    color:#737373;
-   
+    color: #737373;
+    padding: 10px 10px;
 }
 
 .btn1 {
@@ -69,27 +110,26 @@ nav ul li a {
     border-color: transparent;
     padding: 15px 25px;
     border-radius: 8px;
-   border-width: 1px;
-    
+    border-width: 1px;
 }
+
 .btn1.btn2 {
     background-color: #1BA0AB;
     color: #ffffff;
-
-
 }
-
 
 .btn2 i {
     font-size: 14px;
 }
-.brand.heading1{
-    font-size:54px ;
-    /* margin: 0; */
-   
 
+.brand.heading1 {
+    font-size: 54px;
+    /* margin: 0; */
 }
-div.condainer{
+
+/*****************headerend***********************************/
+
+div.condainer {
     position: relative;
     display: flex;
     background-color: #FFF5F0;
@@ -97,37 +137,105 @@ div.condainer{
     justify-content: flex-end;
     flex-wrap: wrap;
     padding-block-start: 5%;
-    margin-left: auto;
-  margin-right: auto;
+    margin: 0;
+    padding-bottom: 80px;
+
 }
-.img1{
-    max-width:100% ;
-    max-height:auto;
+
+.img1 {
+    max-width: 100%;
+    max-height: auto;
 }
-.btn1.btn3{
+
+.btn1.btn3 {
     border-color: #1BA0AB;
     margin-left: 10px;
 
 }
-.text_container{
+
+.text_container {
     position: relative;
-    /* height:700px; */
-    max-width:100% ;
-    flex:50%;
-    padding-bottom: 10%;
-    padding-left: 12%;
+    max-width: 100%;
+    flex: 50%;
+    /* padding-bottom: 10%; */
+    padding-left: 10%;
 }
-/* .image{ */
-    /* padding-left: 12%; */
-    /* padding-right:  */
-/* } */
-.text1{
+
+.text1 {
     font-size: 16px;
     color: #1BA0AB;
 }
-.image1_container{
-flex:50%
+
+.image1_container {
+    flex: 50%
 }
-.btn{
+
+.btn {
     padding-right: 8%;
+}
+
+.page_container {
+    padding: 80px 195px;
+    overflow: hidden;
+}
+
+.page_container.page2_container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    /* background-color: #d84d4d; */
+    column-gap: 15px;
+}
+.page2_text {
+    padding: 23px 190px 23px 0px;
+}
+.card_container.card {
+    box-shadow: 0px 13px 19px 0px #00000012;
+    background: #ffffff;
+    padding: 40px 42px;
+}
+hr.hr1 {
+    background: #E74040;
+    max-width: 94px;
+    height: 7px;
+    margin: 0;
+}
+hr.hr1.hr2 {
+    max-width: 50px;
+    height: 2px;
+}
+
+.page_container.page3_condainer {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.page3_txt_container {
+    padding: 155px 0px 155px 144px;
+    flex: 50%;
+}
+.page3_subtext
+{
+    padding-right: 101px;
+}
+
+.img4 {
+    max-width: 100%;
+    max-height: auto;
+    flex-wrap: wrap;
+    flex: 50%;
+
+}
+
+.page4 {
+    background-color: #E74040;
+}
+.page4_container
+{
+    padding-top: 0px;
+}
+
+.page4_card_condainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 96px;
 }

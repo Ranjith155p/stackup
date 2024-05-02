@@ -9,7 +9,7 @@ body {
     font-weight: 700;
     font-family: montserrat;
     letter-spacing: 0.40000000298023224px;
-    font-size: 16px;
+    font-size: 14px;
 }
 a{
     text-decoration: none;
@@ -219,13 +219,17 @@ nav ul li a {
 }
 .container {
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: 1200px;
 }
 
 .row{
     display: flex;
     border-color: #E74040;
+    align-items: center;
    
+}
+.rowgap{
+    gap: 5px;
 }
 .boking-section
 {

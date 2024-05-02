@@ -220,7 +220,6 @@ nav ul li a {
 .container {
     margin: 0 auto;
     max-width: 1080px;
-
 }
 
 .row{
@@ -263,6 +262,8 @@ flex:1;
 .card{
     display: flex;
 flex-direction: column;
+gap: 10px;
+
 }
 .booking-card-style{
     box-shadow: 0px 13px 19px 0px #00000012;
@@ -279,27 +280,33 @@ hr.hr1 {
 
 hr.hr1.hr2 {
     max-width: 50px;
-    height: 2px;
+    height: 4px;
+}
+.ref-top-text{
+    padding: 80px 0px  96px 0px;
 }
 .about-area
 {
 display: flex;
-padding-bottom: 160px;
+padding-bottom: 80px;
 justify-content: space-between;
 }
+.about-text-area{
+    padding: 150px 0px ;
+}
+
 .about-img{
     max-width: 900px;
 }
-/* .about-text{
-    
-  
-} */
 
 .booking-p-text{
     max-width: 420px;
 }
 .page4_container {
     padding-top: 0px;
+}
+.ref-c{
+    padding-bottom: 78px;
 }
 .ref-card-cnd {
     
@@ -392,11 +399,14 @@ position: relative;
     align-items: center;
     justify-content: center;
 }
-
+.review-top-text
+{
+    padding: 160px 0px 96px 0px;
+}
 .review-card-c{
     display: flex;
     gap:30px;
-    padding-top: 96px;
+    /* padding-top: 96px; */
     text-align: center;
     justify-content: center;
     
@@ -412,39 +422,46 @@ position: relative;
     max-width: 100%;
     height: auto;
 }
-.page_6_card_container
+.doctors-c
+{
+ padding-bottom:34px ;   
+}
+
+.doctors-card-c
 {
     display: grid;
     grid-template-columns:repeat(4,1fr) ;
     /* background-color: #d84d4d; */
     column-gap: 30px;
     width: fit-content;
-    padding-top: 112px;
 }
-.page6_card{
+.doctors-top-text{
+    padding: 112px 0px;
+}
+.doctors-card{
 display: flex;
 flex-direction: column;
 justify-content: center;
 box-shadow: 0px 13px 19px 0px #00000012;
 border-radius: 0px 0px 20px  20px;
 }
-.page6_card_img{
+.doctors-card-img{
     border-radius: 20px 20px 0px  0px;
 /* justify-content: center; */
 
 }
-.page6_icon{
+.doctors-card-icon{
     display: flex;
     color: #1BA0AB;
     gap:20px;
     font-size:24px;
 }
-.page6_card_container
+.doctors-card-container
 {
     font-size: 24px;
 
 }
- .page6_card_text_container {
+ .doctors-card-text-container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -458,19 +475,34 @@ border-radius: 0px 0px 20px  20px;
     background-color: #FFF5F0;
   
 }
+.footer-top-text{
+    padding:80px 0px ;
+}
+.footer-top-c{
+    padding: 80px 0px;
+}
 .footer-top
 {       
-    
     display: flex;
     flex-direction: column;
     text-align: center;
    align-items: center;
     justify-content: center;
+    padding: 80px 0px;
 }
 .footer{
     display:flex;
 justify-content: space-between;
 gap: 30px;
+}
+.get-in-touch{
+    display: flex;
+    max-width: 326px;
+    align-items: center;
+}
+.footericon{
+    font-size: 24px;
+    color: #1BA0AB;
 }
 .column{
     display: flex;

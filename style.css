@@ -113,7 +113,7 @@ max-width: 100%;
 .header_container {
     position: relative;
     display: flex; 
-    justify-content: space-between; 
+gap: 240px;
      align-items: center;
      flex-wrap: wrap;
       margin: 0 auto;
@@ -136,28 +136,29 @@ align-items: center;
 
 }
 .brand{
-    padding-right: 30px;
+    padding-right: 10px;
 }
 
 
 
-nav ul {
+.nav-container {
     position: relative;
     display: flex;
     text-decoration: none;
     list-style: none;
-    /* flex-wrap: wrap; */
-
-}
-
-nav ul li {
     color: #1BA0AB;
-}
-nav ul li a {
-    color: #737373;
-    padding: 15px 15px;
+
 }
 
+
+.nav-container li a {
+    color: #737373;
+    padding: 10px 10px;
+}
+.btn-grp{
+    display:flex ;
+    gap:20px;
+}
 .btn {
     color: #1BA0AB;
     background-color: transparent;
@@ -189,17 +190,12 @@ nav ul li a {
     display: flex;
     padding-block-start: 7%;
     margin: 0 auto;
-    max-width: 1250px;
+    max-width: 1150px;
 
 }
 
-
-
-
 .btn.btn3 {
     border-color: #1BA0AB;
-    
-
 }
 
 .main-discription {
@@ -219,7 +215,7 @@ nav ul li a {
 }
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1080px;
 }
 
 .row{
@@ -252,6 +248,9 @@ flex:1;
 .booking-text{
    padding-top: 25px;
      max-width: 420px;
+     display: flex;
+    flex-direction: column;
+    gap: 20px;
     
 }
 .booking-icon{
@@ -275,16 +274,17 @@ gap: 10px;
     padding: 40px 42px;
 }
 
-hr.hr1 {
+.hr1 {
     background: #E74040;
     max-width: 94px;
     height: 7px;
     margin: 0;
+    border: #E74040;
 }
 
-hr.hr1.hr2 {
+.hr1.hr2 {
     max-width: 50px;
-    height: 4px;
+    height: 2px;
 }
 .ref-top-text{
     padding: 80px 0px  96px 0px;
@@ -296,7 +296,10 @@ padding-bottom: 80px;
 justify-content: space-between;
 }
 .about-text-area{
-    padding: 150px 0px ;
+    padding: 140px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .about-img{
@@ -306,9 +309,7 @@ justify-content: space-between;
 .booking-p-text{
     max-width: 420px;
 }
-.page4_container {
-    padding-top: 0px;
-}
+
 .ref-c{
     padding-bottom: 78px;
 }
@@ -329,10 +330,9 @@ justify-content: space-between;
 }
 .rating
 {
- font-size: PX;
  background: #26335D;
  display: flex;  
-padding: 0px 5px 0px 5px;
+padding: 5px;
 gap: 5px;
 border-radius: 30px;
 opacity: 0px;
@@ -385,12 +385,12 @@ position: relative;
  }
 
 
-.inline{
+/* .inline{
     display:flex;
     /* column-gap: 5px; */
-    align-items: center;
+    /* align-items: center; */
 
-}
+/* } */ 
 
 .iconsize
 {
@@ -417,7 +417,10 @@ position: relative;
    
 }
 .review-card_text{
-    padding: 0px 88px
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 30px 88px
     
 }
 .img_round{
@@ -436,7 +439,7 @@ position: relative;
     display: grid;
     grid-template-columns:repeat(4,1fr) ;
     /* background-color: #d84d4d; */
-    column-gap: 30px;
+    grid-gap: 39px;
     width: fit-content;
 }
 .doctors-top-text{

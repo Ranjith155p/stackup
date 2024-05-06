@@ -175,7 +175,11 @@ align-items: center;
     font-size: 16px;
 }
 
-
+.btn-row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 /*****************headerend***********************************/
 
@@ -218,11 +222,12 @@ align-items: center;
     display: flex;
     border-color: #E74040;
     align-items: center;
+    gap:5px;
    
 }
-.rowgap{
+/* .rowgap{
     gap: 5px;
-}
+} */
 .boking-section
 {
     display: flex;
@@ -261,7 +266,7 @@ flex:1;
 .card{
     display: flex;
 flex-direction: column;
-gap: 10px;
+gap: 20px;
 
 }
 .booking-card-style{
@@ -319,7 +324,7 @@ justify-content: space-between;
 .ref-card {
     display: flex;
     flex-direction: column;
-    padding: 25px 25px 0px 25px;
+    padding: 25px 0px 0px 25px;
     overflow: hidden;
     gap: 17px;   
     
@@ -377,6 +382,7 @@ position: relative;
     overflow: hidden; 
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     
  }
 
@@ -390,7 +396,7 @@ position: relative;
 
 .iconsize
 {
-   font-size: 16px !important;
+   font-size: 19px !important;
 }
 
 .btn.btn3.btn4{

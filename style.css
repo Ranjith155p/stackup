@@ -104,6 +104,9 @@ h6 {
 {
     font-size: 12px;
 }
+.top-p-max{
+    max-width: 375px;
+}
 /*****************headerstart***********************************/
 
 .header_container {
@@ -203,7 +206,7 @@ align-items: center;
 .main-discription {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     max-width: 50%;
     padding-top: 160px;
 }
@@ -250,7 +253,6 @@ flex:1;
 }
 .booking-text{
    padding-top: 25px;
-     max-width: 420px;
      display: flex;
     flex-direction: column;
     gap: 20px;

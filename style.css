@@ -44,8 +44,8 @@ h2 {
     font-family: Montserrat;
     line-height: 50px;
     color: #252B42;
-    margin-block-start: 10px;
-    margin-block-end: 10px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 h3 {
@@ -80,7 +80,7 @@ h5 {
 
 
 h6 {
-    color: #1BA0AB;
+    color: #737373;  
     font-size: 14px;
     font-weight: 700;
     align-items: center;
@@ -90,33 +90,31 @@ h6 {
 
 }
 
-.textcolor1 {
+.skyblue-text {
     color: #1BA0AB;
 }
 
-.textcolor2 {
+.white-text {
     color: #ffffff;
 }
 
-.textcolor3 {
+.lightgray-text {
     color: #BDBDBD;
 }
 
-.textcolor4 {
+.orange-text {
     color: #F69B25;
 }
 
-.textcolor5 {
+.darkgray-text {
     color: #737373;
-
-
 }
 
 .small_text {
     font-size: 12px;
 }
 
-.top-p-max {
+.p-max {
     max-width: 375px;
 }
 
@@ -130,6 +128,7 @@ h6 {
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1080px;
+    padding: 16px 0px;
 }
 
 .header-nav {
@@ -179,7 +178,7 @@ h6 {
     gap: 20px;
 }
 
-.btn {
+.btn-primary {
     color: #1BA0AB;
     background-color: transparent;
     border-color: transparent;
@@ -188,16 +187,16 @@ h6 {
     border-width: 1px;
 }
 
-.btn.btn2 {
+.btn-secondary {
     background-color: #1BA0AB;
     color: #ffffff;
 }
 
-.btn6 {
+.btn-secondary-padding {
     padding: 15px 40px;
 }
 
-.btn2 i {
+.btn-secondary i {
     font-size: 16px;
 }
 
@@ -221,7 +220,7 @@ h6 {
 
 }
 
-.btn.btn3 {
+.btn-border{
     border-color: #1BA0AB;
 }
 
@@ -251,32 +250,30 @@ h6 {
 
 .row {
     display: flex;
-    border-color: #E74040;
     align-items: center;
     gap: 5px;
 
 }
 
-.boking-section {
+.enquiry-section {
     display: flex;
-    padding: 160px 0px;
-    gap: 30px;
+    padding: 80px 0px;
     overflow: hidden;
     justify-content: space-between;
 }
 
-.booking-card {
+.enquiry-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 15px;
     max-width: 550px;
 }
 
-.booking-text-area {
+.enquiry-text-area {
     flex: 1;
 }
 
-.booking-text {
+.enquiry-text {
     padding-top: 25px;
     display: flex;
     flex-direction: column;
@@ -284,7 +281,7 @@ h6 {
 
 }
 
-.booking-icon {
+.enquiry-icon {
     background-color: #1BA0AB;
     max-width: 70px;
     color: #E6E6E6;
@@ -298,16 +295,18 @@ h6 {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow: hidden;
 
 }
 
-.booking-card-style {
-    box-shadow: 0px 13px 19px 0px #00000012;
+.enquiry-card-style {
+    /* box-shadow: 0px 13px 19px 0px #00000012; */
     background: #ffffff;
-    padding: 40px 42px;
+    box-shadow: 25px 0px 114.1px -13px #00000012;
+    padding: 35px 42px;
 }
 
-.hr1 {
+.hr-bold {
     background: #E74040;
     max-width: 94px;
     height: 7px;
@@ -315,7 +314,7 @@ h6 {
     border: #E74040;
 }
 
-.hr1.hr2 {
+.hr-bold.hr-small {
     max-width: 50px;
     height: 2px;
 }
@@ -326,27 +325,28 @@ h6 {
 
 .about-area {
     display: flex;
-    padding-bottom: 80px;
     justify-content: space-between;
+
 }
 
-.about-text-area {
-    padding: 140px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
+.about-text-pad {
+    padding-top: 140px;
+    
 }
 
 .about-img {
     max-width: 900px;
 }
 
-.booking-p-text {
+.p-text {
     max-width: 420px;
 }
-
+.text-condainer{
+    padding: 80px 0px 96px 0px;
+}
 .ref-c {
-    padding-bottom: 78px;
+    padding-bottom: 102px;
 }
 
 .ref-card-cnd {
@@ -361,13 +361,8 @@ h6 {
 
 }
 
-.ref-card-text {
-    display: flex;
-    flex-direction: column;
+.ref-card-pad{
     padding: 25px 0px 0px 25px;
-    overflow: hidden;
-    gap: 20px;
-
 }
 
 .rating {
@@ -437,7 +432,10 @@ h6 {
     gap: 5px;
     align-items: center;
 }
-
+.ref-head-text{
+    max-width: 185px;
+    overflow: hidden;
+}
 
 /* .inline{
     display:flex;
@@ -450,7 +448,7 @@ h6 {
     font-size: 19px !important;
 }
 
-.btn.btn3.btn4 {
+.rounded-btn {
     border-radius: 30px;
     padding: 10px 20px;
     align-items: center;
@@ -485,11 +483,11 @@ h6 {
     height: auto;
 }
 
-.doctors-c {
-    padding-bottom: 34px;
+.employee-text-pad{
+    padding: 35px 0px 112px 0px;
 }
 
-.doctors-card-c {
+.employee-card-c {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* background-color: #d84d4d; */
@@ -497,11 +495,9 @@ h6 {
     width: fit-content;
 }
 
-.doctors-top-text {
-    padding: 112px 0px;
-}
 
-.doctors-card {
+
+.employee-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -509,25 +505,25 @@ h6 {
     border-radius: 0px 0px 20px 20px;
 }
 
-.doctors-card-img {
+.employee-card-img {
     border-radius: 20px 20px 0px 0px;
     /* justify-content: center; */
 
 }
 
-.doctors-card-icon {
+.employee-card-icon {
     display: flex;
     color: #1BA0AB;
     gap: 20px;
     font-size: 24px;
 }
 
-.doctors-card-container {
+.employee-card-container {
     font-size: 24px;
 
 }
 
-.doctors-card-text-container {
+.employee-card-text-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -577,50 +573,76 @@ h6 {
     align-items: center;
     gap: 10px
 }
+.getin-touch-gap{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   /* gap:15px; */
+   justify-content: space-between;
+   
 
+}
 .footericon {
     font-size: 24px;
     color: #1BA0AB;
 }
-
+.address-height{
+    line-height: 25px;
+}
 .footer-gap {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 10px;
-    gap: 15px
+    gap: 20px
 }
-
-.column {
+.section-gap{
+    padding-bottom: 80px;
+}
+.column{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 10px;
-    gap: 10px
+    flex-wrap: wrap
 }
-
+.main-text-padding{
+    padding-top: 160px;
+}
+.enquiry-pad{
+    padding-top:23px ;
+}
+.primary-gap
+{
+    gap:30px;
+}
+.gap-secondary{
+gap:10px
+}
 .footer-top-input {
-    padding: 15px 20px;
+    padding: 20px 20px;
     width: 100%;
-    border: 1px solid #E6E6E6;
-
+    border: none;
 }
 
 .footer-top-button {
     color: #ffffff;
-    padding: 15px 20px;
+    padding: 20px 20px;
     background-color: #1BA0AB;
-    border: 1px solid #1BA0AB;
+    border:none;
 
 }
 
 .footer-top-email {
     display: flex;
     width: 70%;
-}
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #E6E6E6;
 
+}
+/* .footer-line-heght{
+    line-height: ;
+} */
 .footer-bottom {
-    padding: 25px 7px;
+    padding: 25px 0px;
     display: flex;
     justify-content: space-between;
 }

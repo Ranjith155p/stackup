@@ -257,7 +257,6 @@ h6 {
 
 .enquiry-section {
     display: flex;
-    padding: 80px 0px;
     overflow: hidden;
     justify-content: space-between;
 }
@@ -343,7 +342,7 @@ h6 {
     max-width: 420px;
 }
 .text-condainer{
-    padding: 80px 0px 96px 0px;
+    padding-bottom: 96px;
 }
 .ref-c {
     padding-bottom: 102px;
@@ -542,9 +541,6 @@ h6 {
     padding: 80px 0px;
 }
 
-.footer-top-c {
-    padding: 80px 0px;
-}
 
 .footer-top {
     display: flex;
@@ -560,7 +556,6 @@ h6 {
     justify-content: space-between;
     gap: 30px;
     font-size: 14px;
-    padding: 50px 0px;
 }
 
 .footer-sub-H-gap {
@@ -596,7 +591,7 @@ h6 {
     gap: 20px
 }
 .section-gap{
-    padding-bottom: 80px;
+    padding: 80px 0px ;
 }
 .column{
     display: flex;

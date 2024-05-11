@@ -13,13 +13,8 @@ body {
 
 a {
     text-decoration: none;
-    color: #737373;
+    
 }
-
-nav a:hover {
-    background-color: #ffffff;
-}
-
 p {
     margin-block-start: 0px;
     margin-block-end: 0px;
@@ -167,12 +162,43 @@ h6 {
 }
 
 
-.nav-container li a {
+.nav-container  a {
     color: #737373;
     padding: 10px 10px;
     font-size: 14px;
+    display: inline-block;
+    transition: all 0.25 ease;
+    
 }
+.nav-container ul li 
+{
+list-style: none;
+position: absolute;
 
+}
+nav-container li ul li
+
+.nav-container li:hover a{
+    background-color: #ffffff;
+}
+.nav-container li ul li :hover .product{
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0%;
+}
+.product{
+    position: absolute;
+    z-index: -999 ;
+    opacity: 0;
+    /* margin-top: -36px; */
+    visibility: hidden;
+max-width: 200px;  
+padding:10px 50px 10px 0px;  
+background-color: #ffffff;
+}
+.btn-padding{
+    padding: 0px !important;
+}
 .btn-grp {
     display: flex;
     gap: 20px;
@@ -401,7 +427,8 @@ h6 {
     padding: 10px;
     font-size: 20px;
     background-color: #ffffff;
-    border-radius: 100px;
+    border-radius:50%;
+   color: #252B42
 }
 
 .ref-card-img {
@@ -516,9 +543,9 @@ text-align: center;
 
 .employee-card-icon {
     display: flex;
-    color: #1BA0AB;
     gap: 20px;
     font-size: 24px;
+    color: #1BA0AB;
 }
 
 .employee-card-container {
@@ -542,12 +569,6 @@ text-align: center;
     background-color: #FFF5F0;
 
 }
-
-.footer-top-text {
-    padding: 80px 0px;
-}
-
-
 .footer-top {
     display: flex;
     flex-direction: column;
@@ -562,6 +583,7 @@ text-align: center;
     justify-content: space-between;
     gap: 30px;
     font-size: 14px;
+    padding-bottom: 50px;
 }
 
 .footer-sub-H-gap {

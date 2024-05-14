@@ -20,26 +20,37 @@
         <div class="fixed-top">
             <div class="header_container ">
                 <div class="header-nav">
+                    <input type="checkbox" id="menu">
+                <label for="menu" class="checkbtn">
+                    <i class="fa-solid fa-bars "></i>
+                </label>
                     <h3 class="brand">Medical Core</h3>
                     <nav>
                         <ul class="nav-container">
                             <li><a href="#home">Home</a></li>
-                            <li><a class="dp"href="#product">Product</a>
+                            <li><a class="dp" href="#product">Product</a>
                                 <ul class="dropdown">
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#product">Product</a></li>
-                                    <li><a href="#pricing">Pricing</a></li>
+                                    <li><a class="pricing" href="#pricing">Pricing</a>
+                                        <ul class="innerdropdown">
+                                            <li><a href="#home">Home</a></li>
+                                            <li><a href="#product">Product</a></li>
+                                            <li><a href="#pricing">Pricing</a></li>
+                                            <li><a href="#contact">Contact</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#contact">Contact</a></li>
 
                                 </ul>
                             </li>
-                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#pricing">Pricing</a> </li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="btn-grp">
-                    <a href="#login"><button type="button" class="btn-primary ">Login</button>
+                    <a href="#login"><button type="button" class="btn-primary lgn">Login</button>
                     </a>
                     <a href="#"><button type="button" class="btn-primary btn-secondary btn-row">
                             <div>JOIN US</div>
@@ -47,10 +58,7 @@
                         </button>
                     </a>
                 </div>
-                <input type="checkbox"id="menu">
-                <label for="menu" class="checkbtn">
-                <i class="fa-solid fa-bars "></i>   
-            </label>
+                
             </div>
         </div>
     </header>
@@ -60,7 +68,7 @@
             <div class="main-container-area">
                 <div class=" column main-text-padding primary-gap ">
                     <h5 class="skyblue-text">Welcome</h5>
-                    <h1>A Great Place to Receive Care</h1>
+                    <h1 class="h1-max">A Great Place to Receive Care</h1>
                     <h4>Get your best looking smile now!</h4>
                     <div class="btn-row">
                         <button type="button" class="btn-primary btn-secondary btn-secondary-padding">Join Us</button>
@@ -155,9 +163,10 @@
                             <button class="sale" type="button">Sale</button>
                         </div>
                         <div class="ref-icon-grp ">
-                            <a href="#"> <button  class="fa-regular fa-heart btn-primary ref-icon-area "></button></a>
-                            <a href="#"> <button  class="fa-solid fa-cart-shopping btn-primary ref-icon-area"> </button ></a>
-                            <a href="#"> <button class="fa-regular fa-eye btn-primary ref-icon-area"></button ></a>
+                            <a href="#"> <button class="fa-regular fa-heart btn-primary ref-icon-area "></button></a>
+                            <a href="#"> <button class="fa-solid fa-cart-shopping btn-primary ref-icon-area">
+                                </button></a>
+                            <a href="#"> <button class="fa-regular fa-eye btn-primary ref-icon-area"></button></a>
                         </div>
                         <img src="cardimg1.png" alt="hi">
 
@@ -211,9 +220,10 @@
                     <div class="ref-card-img">
                         <div> <button class="sale" type="button">Sale</button></div>
                         <div class="ref-icon-grp ">
-                            <a href="#"> <button  class="fa-regular fa-heart btn-primary ref-icon-area"></button ></a>
-                            <a href="#"> <button  class="fa-solid fa-cart-shopping btn-primary ref-icon-area"> </button ></a>
-                            <a href="#"> <button  class="fa-regular fa-eye btn-primary ref-icon-area"></button ></a>
+                            <a href="#"> <button class="fa-regular fa-heart btn-primary ref-icon-area"></button></a>
+                            <a href="#"> <button class="fa-solid fa-cart-shopping btn-primary ref-icon-area">
+                                </button></a>
+                            <a href="#"> <button class="fa-regular fa-eye btn-primary ref-icon-area"></button></a>
                         </div>
                         <img src="cardimg2.png" alt="hi">
                     </div>
@@ -396,21 +406,21 @@
     <section class="section-gap">
         <div class="footer-top-bgcolor">
             <div class="container">
-            <div class="footer-top">
-                <div class="footer-top-text">
-                    <h6 class="skyblue-text">Newsletter</h6>
-                    <h2>JOIN US</h2>
-                    <p class="p-max">
-                        Problems trying to resolve the conflict between
-                        the two major realms of Classical physics: Newtonian mechanics
-                    </p>
-                </div>
-                <div class="footer-top-email">
-                    <input class="footer-top-input" type="text" placeholder="Your Email">
-                    <a href="#"><button class="footer-top-button" type="submit">subscribe</button></a>
+                <div class="footer-top">
+                    <div class="footer-top-text">
+                        <h6 class="skyblue-text">Newsletter</h6>
+                        <h2>JOIN US</h2>
+                        <p class="p-max">
+                            Problems trying to resolve the conflict between
+                            the two major realms of Classical physics: Newtonian mechanics
+                        </p>
+                    </div>
+                    <div class="footer-top-email">
+                        <input class="footer-top-input" type="text" placeholder="Your Email">
+                        <a href="#"><button class="footer-top-button" type="submit">subscribe</button></a>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <footer class="section-gap">
@@ -505,8 +515,8 @@
                 <h6 class=darkgray-text>Made With Love By Figmaland All Right Reserved </h6>
                 <span class="employee-card-icon">
                     <a href="#"> <i class="fa-brands fa-facebook skyblue-text"></i></a>
-                        <a href="#"> <i class="fa-brands fa-instagram skyblue-text"></i></a>
-                            <a href="#"> <i class="fa-brands fa-twitter skyblue-text"></i></a>
+                    <a href="#"> <i class="fa-brands fa-instagram skyblue-text"></i></a>
+                    <a href="#"> <i class="fa-brands fa-twitter skyblue-text"></i></a>
                 </span>
             </div>
         </div>

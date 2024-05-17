@@ -6,9 +6,10 @@ body {
     /* min-width: max-content; */
 }
 
-img{
+img {
     max-width: 100%;
 }
+
 * {
     box-sizing: border-box;
     font-weight: 700;
@@ -43,7 +44,6 @@ h2 {
     font-size: 40px;
     font-weight: 700;
     font-family: Montserrat;
-    line-height: 50px;
     color: #252B42;
     margin-block-start: 0px;
     margin-block-end: 0px;
@@ -124,9 +124,10 @@ h6 {
 }
 
 /*****************headerstart***********************************/
-.btn-primary.login{
+.btn-primary.login {
     display: none;
 }
+
 .header_container {
     position: relative;
     display: flex;
@@ -245,11 +246,12 @@ h6 {
 
 #menu {
     display: none;
+
 }
 
 .checkbtn {
     position: absolute;
-    font-size: 40px;
+    font-size: 24px;
     margin-right: 40px;
     display: none;
     cursor: pointer;
@@ -454,7 +456,7 @@ h6 {
 }
 
 .ref-card-pad {
-    padding: 25px  0px 0px 25px;
+    padding: 25px 0px 0px 25px;
 }
 
 .rating {
@@ -491,16 +493,18 @@ h6 {
     justify-content: center;
     gap: 10px;
 }
-.ref-card-img img{
+
+.ref-card-img img {
     object-fit: cover;
     display: block;
     height: 100%;
     width: 100%;
 }
+
 .ref-icon-area {
     padding: 10px;
     font-size: 20px;
-   
+
     background-color: #ffffff;
     border-radius: 50%;
     color: #252B42
@@ -760,66 +764,76 @@ h6 {
 }
 
 /***********************************meadia quaries  start *****************************/
-@media(max-width:1007px)
- {
-.main-img-cnd {
+@media(max-width:1007px) {
+    .main-img-cnd {
         display: none;
     }
+
     .main-text-padding {
         align-items: center;
         padding: 100px 50px;
         text-align: center;
-          
+
     }
-    .container{
+
+    /* .container{
         padding: 0px 50px;
-    } 
+    }  */
     .btn-grp {
         padding: 0;
     }
+
     .header_container {
         /* justify-content: space-between; */
-        padding: 20px 40px;
+        padding: 20px 20px;
     }
-    
-    .ref-card-cnd{
+
+    .ref-card-cnd {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-   gap: 20px;
-box-shadow: 0px 13px 19px 0px #00000012;
-   height: 10%;
-}
+        padding: 8%;
+        gap: 40px;
+    }
 
     .ref-card-img {
         width: 100%;
-        flex:1.5;
     }
-    .ref-card-pad{
-        flex: 2;
-       padding:30px 60px 20px 20px;
-        justify-content: space-between;
+
+    .ref-card-pad {
+        gap: 30px;
+        padding: 25px;
     }
-   .ref-card{
-    padding: 50px 48px 0px 20px;
-   }
-    .ref-card-cnd h6{
-        font-size:16px ;
+
+    .ref-card {
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        box-shadow: 0px 13px 19px 0px #00000012;
+
     }
-    .ref-card-cnd p{
-        font-size:16px ;
+
+    .ref-card-cnd h6 {
+        font-size: 16px;
     }
-    .ref-card-cnd h5{
-        font-size:18px ;
+
+    .ref-card-cnd p {
+        font-size: 16px;
     }
-    .ref-card-cnd .small_text{
-        font-size:14px ;
+
+    .ref-card-cnd h5 {
+        font-size: 18px;
     }
-    .rating{
+
+    .ref-card-cnd .small_text {
+        font-size: 14px;
+    }
+
+    .rating {
         line-height: 20px;
     }
 }
-@media(max-width:887px)
- {
+
+@media(max-width:887px) {
     .checkbtn {
         display: inline-flex;
     }
@@ -852,10 +866,11 @@ box-shadow: 0px 13px 19px 0px #00000012;
 
     #menu:checked~nav .nav-container {
         height: 100vh;
+        width: 100%;
     }
 
     .nav-container a {
-        font-size: 18px;
+        font-size: 14px;
         display: block;
     }
 
@@ -864,13 +879,13 @@ box-shadow: 0px 13px 19px 0px #00000012;
     }
 
     .dropdown {
-        margin-top: -8%;
+        margin-top: -12%;
         margin-left: 100px;
 
     }
 
     .innerdropdown {
-        margin-top: -8%;
+        margin-top: -12%;
         margin-left: 100px;
         transition: .3s ease;
     }
@@ -885,8 +900,9 @@ box-shadow: 0px 13px 19px 0px #00000012;
 
     .brand {
         padding-left: 120px;
-        font-size: 30px;
+        /* font-size: 30px; */
     }
+
     .btn-primary.login {
         display: block;
         font-size: 18px;
@@ -894,160 +910,160 @@ box-shadow: 0px 13px 19px 0px #00000012;
         border-radius: 100px;
         padding: 0px 10%;
     }
-
-
-
-
 }
-    /* li.login{
-        display: block;
-    }
- } */
 
-
-/* @media(max-width:900px) {
-    .brand {
-        padding-left: 20px;
-        font-size: 40px;
-        .enquiry-card-style{
-    align-items: center;
-    gap: 10px;
-}
-    } */
-
-    
-
-    
-/* 
-    .btn-grp {
-        padding: 0;
+@media(max-width:790px) {
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
     }
 
-    
-}
-@media (max-width: 768px) {
-    .
+    .container {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .getin-touch-gap {
+        gap: 15px;
+    }
+
+    .employee-card-c {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-column-gap: 10px; */
+    }
+
+    .enquiry-line {
+        width: 100%;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
     .enquiry-section {
         display: flex;
         overflow: hidden;
         flex-direction: column;
-     gap: 20px;
-     align-items: center;
-     text-align: center;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
     }
-    .primary-gap{
-        gap:20px;
-        }
-    .enquiry-pad{
+
+    .primary-gap {
+        gap: 20px;
+    }
+
+    .enquiry-pad {
         align-items: center;
     }
-    .hr-bold{
-        margin-inline-start: auto;
-    margin-inline-end: auto;
+
+    .enquiry-card-style {
+        align-items: center;
+        max-width: 250px;
     }
-    .ref-card-cnd {
+
+    .about-area {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .review-card-c {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        max-width: 536px;
-        gap:10px
-    }
-    .footer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    font-size: 16px;
-    padding-bottom: 50px
-    }
-    .container{
-        margin: 0 auto;
-        padding: 0px 150px;
-        align-items: center;
-    }
-    .main-container-area {
-        text-align: center;
-        align-items: center;
-        padding: 100px 150px;
-    }
-    .main-img-cnd {
-        display: none;
     }
 
+    .about-text-pad {
+        padding: 40px 0px;
+    }
 }
 
-@media (max-width: 425px) {
-   
-
-    .checkbtn {
-        display: inline-flex;
-    }
-
-    .checkbtn #close-icon {
-        display: none
-    }
-
-    #menu:checked~.checkbtn #menu-icon {
-        display: none;
-    }
-
-    #menu:checked~.checkbtn #close-icon {
-        display: block;
-    }
-
-    .nav-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 50%;
-        height: 0;
-        overflow: hidden;
-        background-color: #ffffff;
-        transition: .3s ease;
-    }
-
-    #menu:checked~nav .nav-container {
-        height: 420px;
-    }
-
-    .nav-container a {
-        font-size: 18px;
-        display: block;
-    }
-
-    .btn-primary.lgn {
-        display: none;
-    }
-
-    .dropdown {
-        margin-top: -8%;
-        margin-left: 100px;
-
-    }
-
-    .innerdropdown {
-        margin-top: -8%;
-        margin-left: 100px;
-        transition: .3s ease;
-    }
-
-    .header-nav {
-        justify-content: space-between;
-    }
-
-    .header_container {
-        justify-content: space-between;
+@media(max-width:530px) {
+    .btn-grp {
+        gap: 0;
     }
 
     .brand {
-        padding-left: 120px;
-        font-size: 30px;
+        padding-left: 35px;
+
     }
-    .btn-primary.login {
+
+    .btn-primary {
+        padding: 7px 8px;
+        font-size: 12px;
+    }
+
+    .enquiry-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .footer-top-email {
+        width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .footer-gap {
+        padding: 20px 50px 20px 50px;
+    }
+
+    .getin-touch-gap {
+        padding: 20px 50px 20px 50px;
+    }
+}
+
+@media(max-width:425px) {
+    h3 {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h4 {
         font-size: 18px;
-        background-color: #737373;
-        border-radius: 100px;
-        padding: 5px 10%;
     }
-} */
+
+    h5 {
+        font-size: 16px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 28px;
+
+    }
+
+    .review-card_text {
+        padding: 0px;
+    }
+
+    .employee-card-c {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+}

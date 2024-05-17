@@ -790,7 +790,7 @@ h6 {
 
     .ref-card-cnd {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         padding: 8%;
         gap: 40px;
     }
@@ -800,7 +800,6 @@ h6 {
     }
 
     .ref-card-pad {
-        gap: 30px;
         padding: 25px;
     }
 
@@ -918,7 +917,10 @@ h6 {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 10px;
     }
-
+    .ref-card-cnd {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
     .container {
         padding: 0px 20px 0px 20px;
     }
@@ -983,7 +985,9 @@ h6 {
     .btn-grp {
         gap: 0;
     }
-
+.ref-card-pad{
+    padding: 0px;
+}
     .brand {
         padding-left: 35px;
 

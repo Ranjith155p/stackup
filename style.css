@@ -660,6 +660,7 @@ h6 {
     align-items: center;
     justify-content: center;
     padding: 80px 0px;
+    gap:20px
 }
 
 .footer {
@@ -776,9 +777,9 @@ h6 {
 
     }
 
-    /* .container{
-        padding: 0px 50px;
-    }  */
+    .container{
+        padding: 0px 20px;
+    } 
     .btn-grp {
         padding: 0;
     }
@@ -811,25 +812,15 @@ h6 {
         gap:20px;
     }
 
-    .ref-card-cnd h6 {
-        font-size: 16px;
-    }
+   
 
-    .ref-card-cnd p {
-        font-size: 16px;
-    }
+    
 
-    .ref-card-cnd h5 {
-        font-size: 18px;
-    }
+   
 
-    .ref-card-cnd .small_text {
-        font-size: 14px;
-    }
+    
 
-    .rating {
-        line-height: 20px;
-    }
+    
 }
 
 @media(max-width:887px) {
@@ -917,6 +908,13 @@ h6 {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 10px;
     }
+    .column{
+        align-items: center;
+    text-align: center;
+    }
+    .card{
+        gap:15px
+    }
     .ref-card-cnd {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -932,7 +930,7 @@ h6 {
     .employee-card-c {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* grid-column-gap: 10px; */
+        padding:0px 80px;
     }
 
     .enquiry-line {
@@ -985,6 +983,12 @@ h6 {
     .btn-grp {
         gap: 0;
     }
+    .main-text-padding{
+        padding :100px 20px;
+    }
+    .btn-secondary-padding{
+        padding: 10px 20px;
+    }
 .ref-card-pad{
     padding: 5px;
 }
@@ -1023,13 +1027,20 @@ h6 {
     .getin-touch-gap {
         padding: 20px 50px 20px 50px;
     }
+    .employee-card-c { 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+padding: 0px 100px;
+    }
 }
 
 @media(max-width:425px) {
     h3 {
         font-size: 20px;
     }
-
+.employee-card-c{
+    padding: 0px 60px;
+}
     h1 {
         font-size: 35px;
     }
@@ -1059,15 +1070,18 @@ h6 {
         padding: 0px;
     }
 
-    .employee-card-c {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+    
 
     .footer-bottom {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-top-button{
+     padding: 10px 20px;
+    }
+    .footer-top-input{
+padding: 10px 20px;
     }
 }

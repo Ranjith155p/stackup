@@ -91,12 +91,18 @@ h6 {
 
 }
 
-.skyblue-text {
-    color: #1BA0AB;
+:root {
+    --white: #ffffff;
+    --skyblue: #1BA0AB;
+}
+
+.primary-color {
+    color: var(--skyblue);
+    ;
 }
 
 .white-text {
-    color: #ffffff;
+    color: var(--white);
 }
 
 .lightgray-text {
@@ -119,10 +125,6 @@ h6 {
     max-width: 375px;
 }
 
-.h1-max {
-    max-width: 910px;
-}
-
 /*****************headerstart***********************************/
 .btn-primary.login {
     display: none;
@@ -130,21 +132,16 @@ h6 {
 
 .header_container {
     position: relative;
-    display: flex;
-
-    align-items: center;
-    flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1080px;
     padding: 16px 0px;
     justify-content: space-between;
-
 }
 
 .header-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .fixed-top {
@@ -154,11 +151,7 @@ h6 {
     left: 0;
     /* height: 100vh; */
     z-index: 999;
-    background: #FFF5F0;
-}
-
-.brand {
-    padding-right: 10px;
+    background: #FFF5F0
 }
 
 .nav-container {
@@ -166,20 +159,14 @@ h6 {
     display: flex;
     text-decoration: none;
     list-style: none;
-    color: #1BA0AB;
+    color: var(--skyblue);
     font-size: 14px;
+    padding-left: 0px;
+    padding-right: 100px;
+    align-items: center;
 }
 
-.dropdown li a {
-    display: block;
-    padding: 10px 10px;
-    text-decoration: none;
-    background-color: #ffffff;
-}
 
-.dropdown li a:hover {
-    background-color: #BDBDBD;
-}
 
 .nav-container a {
     color: #737373;
@@ -188,60 +175,13 @@ h6 {
 }
 
 .nav-container a:hover {
-    color: #1BA0AB;
-    background-color: #BDBDBD;
+    background-color: var(--skyblue);
+    ;
+    color: var(--white);
 }
 
 .nav-container ul li {
     list-style: none;
-}
-
-.dp:hover+.dropdown {
-    display: block;
-}
-
-.dropdown:hover {
-    display: flex;
-    flex-direction: column;
-    gap: 20px
-}
-
-.dropdown {
-    position: absolute;
-    display: none;
-    background-color: #ffffff;
-    width: 100%;
-    padding-inline-start: 0px;
-    margin-top: -25px;
-
-}
-
-.innerdropdown {
-    position: absolute;
-    display: none;
-    width: 100%;
-    background-color: #ffffff;
-    padding-inline-start: 0px;
-    margin-top: -38px;
-    margin-left: 81px;
-
-}
-
-.innerdropdown:hover {
-    display: flex;
-    flex-direction: column;
-    gap: 20px
-}
-
-.pricing:hover+.innerdropdown {
-    display: block;
-}
-
-.innerdropdown li a {
-    display: block;
-    padding: 10px 10px;
-    text-decoration: none;
-    background-color: #ffffff;
 }
 
 #menu {
@@ -252,7 +192,7 @@ h6 {
 .checkbtn {
     position: absolute;
     font-size: 24px;
-    margin-right: 40px;
+    top: 24px;
     display: none;
     cursor: pointer;
 }
@@ -268,7 +208,8 @@ h6 {
 }
 
 .btn-primary {
-    color: #1BA0AB;
+    color: var(--skyblue);
+    ;
     background-color: transparent;
     border-color: transparent;
     padding: 15px 25px;
@@ -277,8 +218,9 @@ h6 {
 }
 
 .btn-secondary {
-    background-color: #1BA0AB;
-    color: #ffffff;
+    background-color: var(--skyblue);
+    ;
+    color: var(--white);
 }
 
 .btn-secondary-padding {
@@ -310,7 +252,8 @@ h6 {
 }
 
 .btn-border {
-    border-color: #1BA0AB;
+    border-color: var(--skyblue);
+    ;
 }
 
 .main-discription {
@@ -371,7 +314,8 @@ h6 {
 }
 
 .enquiry-icon {
-    background-color: #1BA0AB;
+    background-color: var(--skyblue);
+    ;
     max-width: 70px;
     color: #E6E6E6;
     font-size: 32px;
@@ -390,7 +334,7 @@ h6 {
 
 .enquiry-card-style {
     /* box-shadow: 0px 13px 19px 0px #00000012; */
-    background: #ffffff;
+    background: var(--white);
     box-shadow: 25px 0px 114.1px -13px #00000012;
     padding: 35px 42px;
 }
@@ -479,7 +423,7 @@ h6 {
     left: 20px;
     padding: 3px 10px;
     background-color: #E74040;
-    color: #ffffff;
+    color: var(--white);
     border: none;
 
 }
@@ -504,8 +448,7 @@ h6 {
 .ref-icon-area {
     padding: 10px;
     font-size: 20px;
-
-    background-color: #ffffff;
+    background-color: var(--white);
     border-radius: 50%;
     color: #252B42
 }
@@ -628,7 +571,9 @@ h6 {
     display: flex;
     gap: 20px;
     font-size: 24px;
-    color: #1BA0AB;
+    color: var(--skyblue);
+    ;
+    align-items: center;
 }
 
 .employee-card-container {
@@ -660,7 +605,7 @@ h6 {
     align-items: center;
     justify-content: center;
     padding: 80px 0px;
-    gap:20px
+    gap: 20px
 }
 
 .footer {
@@ -694,7 +639,8 @@ h6 {
 
 .footericon {
     font-size: 24px;
-    color: #1BA0AB;
+    color: var(--skyblue);
+    ;
 }
 
 .address-height {
@@ -741,9 +687,10 @@ h6 {
 }
 
 .footer-top-button {
-    color: #ffffff;
+    color: var(--white);
     padding: 20px 20px;
-    background-color: #1BA0AB;
+    background-color: var(--skyblue);
+    ;
     border: none;
 
 }
@@ -753,7 +700,12 @@ h6 {
     width: 70%;
     overflow: hidden;
     border-radius: 5px;
-    border: 1px solid #E6E6E6;
+    border: 1px solid var(--white);
+
+}
+
+.get-in-touch i {
+    width: 24px;
 
 }
 
@@ -764,324 +716,15 @@ h6 {
     justify-content: space-between;
 }
 
-/***********************************meadia quaries  start *****************************/
-@media(max-width:1007px) {
-    .main-img-cnd {
-        display: none;
-    }
-
-    .main-text-padding {
-        align-items: center;
-        padding: 100px 50px;
-        text-align: center;
-
-    }
-
-    .container{
-        padding: 0px 20px;
-    } 
-    .btn-grp {
-        padding: 0;
-    }
-
-    .header_container {
-        /* justify-content: space-between; */
-        padding: 0px 20px;
-    }
-
-    .ref-card-cnd {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding: 8%;
-        gap: 40px;
-    }
-
-    .ref-card-img {
-        width: 100%;
-    }
-
-    .ref-card-pad {
-        padding: 25px;
-    }
-
-    .ref-card {
-        display: flex;
-        flex-direction: column;
-        padding: 2%;
-        box-shadow: 0px 13px 19px 0px #00000012;
-        gap:20px;
-    }
-
-   
-
-    
-
-   
-
-    
-
-    
+#inner_menu {
+    display: none;
 }
 
-@media(max-width:887px) {
-    .checkbtn {
-        display: inline-flex;
-    }
-
-    .checkbtn #close-icon {
-        display: none
-    }
-
-    #menu:checked~.checkbtn #menu-icon {
-        display: none;
-    }
-
-    #menu:checked~.checkbtn #close-icon {
-        display: block;
-    }
-
-    .nav-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        position: absolute;
-        top: 72%;
-        left: 0;
-        width: 50%;
-        height: 0;
-        overflow: hidden;
-        background-color: #ffffff;
-        transition: .3s ease;
-    }
-
-    #menu:checked~nav .nav-container {
-        height: 100vh;
-        width: 100%;
-    }
-
-    .nav-container a {
-        font-size: 14px;
-        display: block;
-    }
-
-    .btn-primary.lgn {
-        display: none;
-    }
-
-    .dropdown {
-        margin-top: -12%;
-        margin-left: 100px;
-
-    }
-
-    .innerdropdown {
-        margin-top: -12%;
-        margin-left: 100px;
-        transition: .3s ease;
-    }
-
-    .header-nav {
-        justify-content: space-between;
-    }
-
-    .header_container {
-        justify-content: space-between;
-    }
-
-    .brand {
-        padding-left: 120px;
-        /* font-size: 30px; */
-    }
-
-    .btn-primary.login {
-        display: block;
-        font-size: 18px;
-        background-color: #737373;
-        border-radius: 100px;
-        padding: 0px 10%;
-    }
+#sub_inner_menu {
+    display: none;
 }
 
-@media(max-width:790px) {
-    .footer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 10px;
-    }
-    .column{
-        align-items: center;
-    text-align: center;
-    }
-    .card{
-        gap:15px
-    }
-    .ref-card-cnd {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .container {
-        padding: 0px 20px 0px 20px;
-    }
-
-    .getin-touch-gap {
-        gap: 15px;
-    }
-
-    .employee-card-c {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding:0px 80px;
-    }
-
-    .enquiry-line {
-        width: 100%;
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .enquiry-section {
-        display: flex;
-        overflow: hidden;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .primary-gap {
-        gap: 20px;
-    }
-
-    .enquiry-pad {
-        align-items: center;
-    }
-
-    .enquiry-card-style {
-        align-items: center;
-        max-width: 250px;
-    }
-
-    .about-area {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .review-card-c {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .about-text-pad {
-        padding: 40px 0px;
-    }
-}
-
-@media(max-width:530px) {
-    .btn-grp {
-        gap: 0;
-    }
-    .main-text-padding{
-        padding :100px 20px;
-    }
-    .btn-secondary-padding{
-        padding: 10px 20px;
-    }
-.ref-card-pad{
-    padding: 5px;
-}
-    .brand {
-        padding-left: 35px;
-
-    }
-
-    .btn-primary.btn-secondary.btn-row{
-        padding: 7px 8px;
-        font-size: 12px;
-    }
-
-    .enquiry-card {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        justify-content: center;
-    }
-
-    .footer-top-email {
-        width: 100%;
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-    .footer-gap {
-        padding: 20px 50px 20px 50px;
-    }
-
-    .getin-touch-gap {
-        padding: 20px 50px 20px 50px;
-    }
-    .employee-card-c { 
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-padding: 0px 100px;
-    }
-}
-
-@media(max-width:425px) {
-    h3 {
-        font-size: 20px;
-    }
-.employee-card-c{
-    padding: 0px 60px;
-}
-    h1 {
-        font-size: 35px;
-    }
-
-    h4 {
-        font-size: 18px;
-    }
-
-    h5 {
-        font-size: 16px;
-    }
-
-    h6 {
-        font-size: 14px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    h2 {
-        font-size: 28px;
-
-    }
-
-    .review-card_text {
-        padding: 0px;
-    }
-
-    
-
-    .footer-bottom {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .footer-top-button{
-     padding: 10px 20px;
-    }
-    .footer-top-input{
-padding: 10px 20px;
-    }
+.dp {
+    display: flex;
+    gap: 10px
 }

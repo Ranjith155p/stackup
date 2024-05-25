@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel='stylesheet' type='text/css' href='meadia.css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -13,7 +14,7 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>medical core</title>
-</head>4%
+</head>
 
 <body>
     <header>
@@ -29,11 +30,22 @@
                     <nav>
                         <ul class="nav-container">
                             <li><a href="#home">Home</a></li>
-                            <li><a class="dp" href="#product">Product</a>
+                            <li>
+                                <input type="checkbox" id="inner_menu">
+                                <a class="dp" href="#product">
+                                    <label for="inner_menu"><span>Product</span>
+                                        <i class="fa-solid fa-caret-down"></i></label>
+                                </a>
                                 <ul class="dropdown">
                                     <li><a href="#home">soap</a></li>
                                     <li><a href="#product">fast food</a></li>
-                                    <li><a class="pricing" href="#pricing">fruits</a>
+                                    <li>
+
+                                        <input type="checkbox" id="sub_inner_menu">
+                                        <a class="pricing" href="#pricing">
+                                            <label for="sub_inner_menu"><span>fruits</span>
+                                                <i class="fa-solid fa-caret-down"></i></label>
+                                        </a>
                                         <ul class="innerdropdown">
                                             <li><a href="#home">apple</a></li>
                                             <li><a href="#product">orange</a></li>
@@ -42,7 +54,6 @@
                                         </ul>
                                     </li>
                                     <li><a href="#contact">vegitables</a></li>
-
                                 </ul>
                             </li>
                             <li><a href="#pricing">Pricing</a> </li>
@@ -51,26 +62,29 @@
                             </li>
                         </ul>
                     </nav>
+                    <div class="btn-grp">
+                        <a href="#login"><button type="button" class="btn-primary lgn">Login</button>
+                        </a>
+                        <a href="#"><button type="button" class="btn-primary btn-secondary btn-row">
+                                <div>JOIN US</div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <div class="btn-grp">
-                    <a href="#login"><button type="button" class="btn-primary lgn">Login</button>
-                    </a>
-                    <a href="#"><button type="button" class="btn-primary btn-secondary btn-row">
-                            <div>JOIN US</div>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </a>
-                </div>
+
 
             </div>
         </div>
     </header>
+
+
     <!-- main container area -->
     <main>
         <div class="main-container-bg">
             <div class="main-container-area">
                 <div class=" column main-text-padding primary-gap ">
-                    <h5 class="skyblue-text">Welcome</h5>
+                    <h5 class="primary-color">Welcome</h5>
                     <h1 class="h1-max">A Great Place to Receive Care</h1>
                     <h4>Get your best looking smile now!</h4>
                     <div class="btn-row">
@@ -99,12 +113,11 @@
                         Newtonian mechanics</p>
                     <a href="#">
                         <button type="button" class="row  btn-primary btn-padding ">
-                            <h6 class="skyblue-text">Learn More</h6>
-                            <i class="material-icons skyblue-text">keyboard_arrow_right</i>
+                            <h6 class="primary-color">Learn More</h6>
+                            <i class="material-icons primary-color">keyboard_arrow_right</i>
                         </button>
                     </a>
                 </div>
-
                 <div class="enquiry-card">
                     <div class="card enquiry-card-style ">
                         <span class="fa-solid fa-heart-pulse enquiry-icon"></span>
@@ -146,12 +159,11 @@
                         Newtonian mechanics </p>
                     <a href="#">
                         <button type="button" class="row  btn-primary btn-padding ">
-                            <h6 class="skyblue-text">Learn More</h6>
-                            <i class="material-icons skyblue-text">keyboard_arrow_right</i>
+                            <h6 class="primary-color">Learn More</h6>
+                            <i class="material-icons primary-color">keyboard_arrow_right</i>
                         </button>
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
@@ -159,7 +171,7 @@
     <section class="section-gap">
         <div class="container  ref-c ">
             <div class="column gap-secondary text-condainer">
-                <h6 class="skyblue-text">Practice Advice</h6>
+                <h6 class="primary-color">Practice Advice</h6>
                 <h2>The Best Reference</h2>
                 <p class="p-max">Problems trying to resolve the conflict between the two major realms of Classical
                     physics: Newtonian
@@ -168,9 +180,7 @@
             <div class="ref-card-cnd">
                 <div class="ref-card">
                     <div class="ref-card-img">
-
                         <img src="cardimg1.png" alt="hi">
-
                         <div class="ref-icon-grp">
                             <a href="#"> <button class="fa-regular fa-heart btn-primary ref-icon-area "></button></a>
                             <a href="#"> <button class="fa-solid fa-cart-shopping btn-primary ref-icon-area">
@@ -180,12 +190,11 @@
                         <div>
                             <button class="sale" type="button">Sale</button>
                         </div>
-
                     </div>
                     <div class="card ref-card-pad">
                         <div class="ref-head">
                             <div class="ref-head-text">
-                                <a href="#" class="skyblue-text "> Painless procedures</a>
+                                <a href="#" class="primary-color"> Painless procedures</a>
                             </div>
                             <div class="rating">
                                 <span> <i class="fa-solid fa-star star_icon"></i></span>
@@ -208,7 +217,7 @@
                         </div>
                         <div class="ref-row darkgray-text">
                             <div class="row">
-                                <span class="material-symbols-outlined skyblue-text">alarm</span>
+                                <span class="material-symbols-outlined primary-color">alarm</span>
                                 <span class="small_text darkgray-text"> 22h...</span>
                             </div>
                             <div class="row">
@@ -244,7 +253,7 @@
                     <div class="card ref-card-pad">
                         <div class="ref-head">
                             <div class="ref-head-text">
-                                <a href="#" class="skyblue-text "> Health Queries</a>
+                                <a href="#" class="primary-color"> Health Queries</a>
                             </div>
                             <div class="rating">
                                 <span> <i class="fa-solid fa-star star_icon"></i></span>
@@ -268,7 +277,7 @@
                         </div>
                         <div class="ref-row  darkgray-text">
                             <div class="row">
-                                <span class="material-symbols-outlined skyblue-text"> alarm</span>
+                                <span class="material-symbols-outlined primary-color"> alarm</span>
                                 <span class=" small_text darkgray-text"> 22h...</span>
                             </div>
                             <div class="row">
@@ -294,7 +303,7 @@
     <section class="section-gap">
         <div class="container">
             <div class="column gap-secondary text-condainer">
-                <h6 class="skyblue-text">Testimonials</h6>
+                <h6 class="primary-color">Testimonials</h6>
                 <h2>See Our Impressions</h2>
                 <p class="p-max">
                     Problems trying to resolve the conflict between
@@ -350,7 +359,7 @@
     <section class="section-gap">
         <div class="container ">
             <div class="column gap-secondary employee-text-pad">
-                <h6 class="skyblue-text">Team</h6>
+                <h6 class="primary-color">Team</h6>
                 <h2>Our Team</h2>
                 <p class="p-max">
                     Problems trying to resolve the conflict between
@@ -368,9 +377,9 @@
                         </h5>
                         <p class="small_text">Profession</p>
                         <span class="employee-card-icon">
-                            <a href="#"> <i class="fa-brands fa-facebook skyblue-text "></i></a>
-                            <a href="#"> <i class="fa-brands fa-instagram skyblue-text "></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter skyblue-text"></i></a>
+                            <a href="#"> <i class="fa-brands fa-facebook primary-color "></i></a>
+                            <a href="#"> <i class="fa-brands fa-instagram primary-color "></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter primary-color"></i></a>
                         </span>
                     </div>
                 </div>
@@ -382,9 +391,9 @@
                         <h5>Julian Jameson</h5>
                         <p class="small_text">Profession</p>
                         <span class="employee-card-icon">
-                            <a href="#"> <i class="fa-brands fa-facebook skyblue-text "></i></a>
-                            <a href="#"> <i class="fa-brands fa-instagram skyblue-text "></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter skyblue-text"></i></a>
+                            <a href="#"> <i class="fa-brands fa-facebook primary-color "></i></a>
+                            <a href="#"> <i class="fa-brands fa-instagram primary-color"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter primary-color"></i></a>
                         </span>
                     </div>
                 </div>
@@ -394,9 +403,9 @@
                         <h5>Julian Jameson</h5>
                         <p class="small_text">Profession</p>
                         <span class="employee-card-icon">
-                            <a href="#"> <i class="fa-brands fa-facebook skyblue-text "></i></a>
-                            <a href="#"> <i class="fa-brands fa-instagram skyblue-text "></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter skyblue-text"></i></a>
+                            <a href="#"> <i class="fa-brands fa-facebook primary-color "></i></a>
+                            <a href="#"> <i class="fa-brands fa-instagram primary-color "></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter primary-color"></i></a>
                         </span>
                     </div>
                 </div>
@@ -408,9 +417,9 @@
                         <h5>Julian Jameson</h5>
                         <p class="small_text">Profession</p>
                         <span class="employee-card-icon">
-                            <a href="#"> <i class="fa-brands fa-facebook skyblue-text "></i></a>
-                            <a href="#"> <i class="fa-brands fa-instagram skyblue-text "></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter skyblue-text"></i></a>
+                            <a href="#"> <i class="fa-brands fa-facebook primary-color  "></i></a>
+                            <a href="#"> <i class="fa-brands fa-instagram primary-color "></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter primary-color "></i></a>
                         </span>
                     </div>
                 </div>
@@ -423,7 +432,7 @@
             <div class="container">
                 <div class="footer-top">
                     <div class="footer-top-text">
-                        <h6 class="skyblue-text">Newsletter</h6>
+                        <h6 class="primary-color ">Newsletter</h6>
                         <h2>JOIN US</h2>
                         <p class="p-max">
                             Problems trying to resolve the conflict between
@@ -511,7 +520,7 @@
                         </a>
                     </div>
                     <div class="get-in-touch">
-                        <a href="#"> <i class="fa-solid fa-location-dot  employee-card-icon"></i></a>
+                        <a href="#"> <i class="fa-solid fa-location-dot  employee-card-icon  "></i></a>
                         <a href="#">
                             <h6 class="address-height"> 4517 Washington Ave. Manchester,
                                 Kentucky 39495
@@ -529,9 +538,9 @@
             <div class="footer-bottom ">
                 <h6 class=darkgray-text>Made With Love By Figmaland All Right Reserved </h6>
                 <span class="employee-card-icon">
-                    <a href="#"> <i class="fa-brands fa-facebook skyblue-text"></i></a>
-                    <a href="#"> <i class="fa-brands fa-instagram skyblue-text"></i></a>
-                    <a href="#"> <i class="fa-brands fa-twitter skyblue-text"></i></a>
+                    <a href="#"> <i class="fa-brands fa-facebook primary-color "></i></a>
+                    <a href="#"> <i class="fa-brands fa-instagram primary-color "></i></a>
+                    <a href="#"> <i class="fa-brands fa-twitter primary-color "></i></a>
                 </span>
             </div>
         </div>

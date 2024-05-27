@@ -133,6 +133,7 @@
         display: none;
         background-color: #1BA0AB;
         transition: .3s ease-in-out;
+        border-radius: 0px 0px 10px 10px;
 
     }
 
@@ -214,12 +215,13 @@
         padding-left: 48px;
     }
 
-    .btn-primary.login {
+        .login {
         display: block;
         background-color: #252B42;
-        border-radius: 100px;
-        padding: 2px 18%;
+        text-align: center;
         color: #ffffff;
+        padding:5px;
+        border-radius: 0px 0px 10px 0px;
     }
 
     .nav-container a:hover {

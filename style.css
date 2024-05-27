@@ -129,7 +129,6 @@ h6 {
 .btn-primary.login {
     display: none;
 }
-
 .header_container {
     position: relative;
     margin: 0 auto;
@@ -562,8 +561,6 @@ h6 {
 
 .employee-card-img {
     border-radius: 20px 20px 0px 0px;
-    /* justify-content: center; */
-
 }
 
 .employee-card-icon {

@@ -131,7 +131,7 @@
         width: 50vh;
         padding-right: 0px;
         display: none;
-        background-color: #1BA0AB;
+        background-color:#252B42;
         transition: .3s ease-in-out;
         border-radius: 0px 0px 10px 10px;
 
@@ -217,7 +217,7 @@
 
         .login {
         display: block;
-        background-color: #252B42;
+        background-color:  #1BA0AB;
         text-align: center;
         color: #ffffff;
         padding:5px;
@@ -225,7 +225,7 @@
     }
 
     .nav-container a:hover {
-        background-color: #252B42;
+        background-color:#1BA0AB;
     }
 }
 

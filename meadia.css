@@ -101,6 +101,7 @@
     .ref-card-img {
         width: 100%;
     }
+    
 }
 
 @media(max-width:886px) {
@@ -130,7 +131,8 @@
         width: 50vh;
         padding-right: 0px;
         display: none;
-        background-color: #0bd0fa;
+        /* background-color: #0bd0fa; */
+        background-color: #1BA0AB;
         transition: width .35s ease-in-out;
 
     }
@@ -145,8 +147,9 @@
         color: #ffffff;
     }
 
-    #inner_menu:checked+label i,
-    #sub_inner_menu:checked+label i {
+    #inner_menu:checked ~  a label i,
+    #sub_inner_menu:checked ~ a label i
+    {
         transform: rotate(180deg);
         transition: transform 0.3s ease-in-out;
     }
@@ -195,7 +198,7 @@
     .nav-container li a {
         font-size: 14px;
         display: block;
-        background-color: #0bd0fa;
+        /* background-color: #0bd0fa; */
 
     }
 

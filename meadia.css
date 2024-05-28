@@ -184,6 +184,9 @@
         visibility: visible;
         opacity: 1;
         left: 0;
+        margin-top: 0px;
+        height: max-content;
+
         position: relative;
     }
 
@@ -196,7 +199,9 @@
         visibility: hidden;
         position: absolute;
         opacity: 0;
-        left: -100px;
+        height: 0px;
+        overflow: hidden;
+       margin-top: -100px;
         padding-inline-start: 0px;
         transition: all 0.3s ease-in;
         padding-inline-start: 0px

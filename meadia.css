@@ -36,12 +36,14 @@
 @media(min-width:887px) {
     .innerdropdown {
         position: absolute;
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
         width: 100%;
         background-color: #ffffff;
         padding-inline-start: 0px;
         margin-top: -38px;
-        margin-left: 100px;
+        margin-left: 0px;
     }
 
     .dropdown li a {
@@ -53,20 +55,25 @@
 
     .dropdown {
         position: absolute;
-        display: none;
         background-color: #ffffff;
         padding-inline-start: 0px;
-        margin-top: 0px;
+        margin-top: 50px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in;
 
     }
 
     .innerdropdown:hover {
-        display: flex;
-        flex-direction: column;
+        visibility: visible;
+        opacity: 1;
+        margin-left: 100px;
     }
 
     .dp:hover+.dropdown {
-        display: block;
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0px;
     }
 
     .dropdown a {
@@ -74,8 +81,9 @@
     }
 
     .dropdown:hover {
-        display: flex;
-        flex-direction: column;
+        visibility: visible;
+        opacity: 1;
+        margin-top: 0px;
     }
 
     .innerdropdown li a {
@@ -86,7 +94,9 @@
     }
 
     .pricing:hover+.innerdropdown {
-        display: block;
+        visibility: visible;
+        opacity: 1;
+        margin-left: 100px;
     }
 
     .dropdown li a:hover {
@@ -101,12 +111,21 @@
     .ref-card-img {
         width: 100%;
     }
-    
+
 }
 
 @media(max-width:886px) {
     .checkbtn {
         display: inline-flex;
+    }
+
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 999;
+        height: 72px;
     }
 
     .checkbtn #close-icon {
@@ -124,17 +143,18 @@
     .nav-container {
         display: flex;
         flex-direction: column;
-        gap: 20px;
         position: absolute;
-        top: 72%;
         left: -100%;
-       width: 350px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        width: 350px;
         padding-right: 0px;
-        display: none;
-        background-color:#252B42;
-        transition: .3s ease-in-out;
-        border-radius: 0px 0px 10px 10px;
-
+        background-color: #252B42;
+        overflow: auto;
+        margin-top: 35px;
+        max-height: calc(100vh - 72px);
+        overflow: auto;
     }
 
     .nav-container a {
@@ -147,43 +167,52 @@
         color: #ffffff;
     }
 
-    #inner_menu:checked ~  a label i,
-    #sub_inner_menu:checked ~ a label i
-    {
+    #inner_menu:checked~a label i,
+    #sub_inner_menu:checked~a label i {
         transform: rotate(180deg);
         transition: transform 0.3s ease-in-out;
     }
 
     #inner_menu:checked~.dropdown {
-        display: block;
-      
-
+        visibility: visible;
+        opacity: 1;
+        left: 0;
+        position: relative;
     }
 
     #sub_inner_menu:checked~.innerdropdown {
-        display: block;
-
+        visibility: visible;
+        opacity: 1;
+        left: 0;
+        position: relative;
     }
-.label-gap{
-    display: flex;
-    justify-content: space-between;
-}
+
+    .label-gap {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .innerdropdown {
-        display: none;
-        width: 100%;
+        visibility: hidden;
+        position: absolute;
+        opacity: 0;
+        left: -100px;
         padding-inline-start: 0px;
-        transition: all 0.5s ease-in-out;
-        padding-inline-start: 0px;
+        transition: all 0.3s ease-in;
+        padding-inline-start: 0px
     }
 
     .dropdown {
-        transition: 0.5s ease-in-out;
-        display: none;
-        padding-inline-start: 0px;
+        transition: all 0.3s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+        left: -100px;
+        position: absolute;
+        padding-inline-start: 20px;
     }
 
     .innerdropdown li a {
-        padding: 10px 60px;
+        padding: 10px 40px;
 
     }
 
@@ -192,14 +221,14 @@
     }
 
     #menu:checked~nav .nav-container {
-        display: block;
+        visibility: visible;
+        opacity: 1;
         left: 0;
     }
 
     .nav-container li a {
         font-size: 16px;
         display: block;
-        /* background-color: #0bd0fa; */
 
     }
 
@@ -215,17 +244,16 @@
         padding-left: 48px;
     }
 
-        .login {
+    .login {
         display: block;
-        background-color:  #1BA0AB;
+        background-color: #1BA0AB;
         text-align: center;
         color: #ffffff;
-        padding:5px;
-        border-radius: 0px 0px 10px 0px;
+        padding: 5px;
     }
-    
+
     .nav-container a:hover {
-        background-color:#1BA0AB;
+        background-color: #1BA0AB;
     }
 }
 

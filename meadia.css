@@ -101,10 +101,6 @@
     color: #ffffff;
   }
 
-  .ref-card-pad {
-    padding: 25px;
-  }
-
   .ref-card-img {
     width: 100%;
   }
@@ -350,7 +346,7 @@ background-color: #252B42;
     gap: 0;
   }
   .ref-card-img {
-    max-height: 40%;
+    max-height: 400px;
   }
   .main-text-padding {
     padding: 100px 20px;
